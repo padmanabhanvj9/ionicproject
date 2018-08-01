@@ -1,0 +1,18 @@
+page-historytab {
+
+}
+.vertical-line{
+    width: 1px;
+    height: 100%;
+    border: 1px solid darkgrey;
+    position: absolute;
+    z-index: 1;
+    left: 17px;
+    top: -5px;
+}
+.trackervisits{
+    color: deeppink;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+}

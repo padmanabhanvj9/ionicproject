@@ -1,0 +1,99 @@
+<!--
+  Generated template for the OptionNotificationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Notifiy Rule</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <!-- <ion-row> -->
+        <ion-label class="optlabel">Choose Date</ion-label>
+        <ion-row>
+            <ion-col col-5>
+                <ion-datetime 
+                    class="optdatetime" 
+                    displayFormat="DD-MM-YYYY" 
+                    pickerFormat="DD MMMM YYYY" 
+                    [(ngModel)]="fromDate" 
+                    min="2018" max="2050-12-31" 
+                    placeholder="From Date"></ion-datetime>
+            </ion-col>
+            <ion-col col-2 style="text-align: center;padding:15px;">
+                to
+            </ion-col>
+            <ion-col col-5>
+                <ion-datetime class="optdatetime" displayFormat="DD-MM-YYYY" pickerFormat="DD MMMM YYYY" [(ngModel)]="toDate" placeholder="To Date"></ion-datetime>
+            </ion-col>
+        </ion-row>
+
+        <!-- checkbox for customer status -->
+        <ion-label class="optlabel">CustomerStatus</ion-label>
+        <ion-list class="optlist">
+          <ion-row>
+            <ion-col col-4>
+                <ion-item class="optitem">
+                    <ion-label>Checkedout</ion-label>
+                    <ion-checkbox [(ngModel)]="checkedout" class="optchecckbox"></ion-checkbox>
+                </ion-item>
+            </ion-col>
+            <ion-col col-4>
+                <ion-item class="optitem">
+                    <ion-label>Cancelled</ion-label>
+                    <ion-checkbox [(ngModel)]="cancelled" class="optchecckbox"></ion-checkbox>
+                </ion-item>
+            </ion-col>
+            <ion-col col-4>
+                <ion-item class="optitem">
+                    <ion-label>Booked</ion-label>
+                    <ion-checkbox [(ngModel)]="booked" class="optchecckbox"></ion-checkbox>
+                </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-list>
+
+
+        <!-- checkbox for schedule type -->
+        <ion-label class="optlabel">Schedule Type</ion-label>
+        <ion-list class="optlist">
+          <ion-row>
+            <ion-col col-4>
+                <ion-item>
+                    <ion-label>SMS</ion-label>
+                    <ion-checkbox [(ngModel)]="sms" class="optchecckbox"></ion-checkbox>
+                </ion-item>
+            </ion-col>
+            <ion-col col-4>
+                <ion-item>
+                    <ion-label>PUSH</ion-label>
+                    <ion-checkbox [(ngModel)]="push" class="optchecckbox"></ion-checkbox>
+                </ion-item>
+            </ion-col>
+            <ion-col col-4>
+                <ion-item>
+                    <ion-label>Email</ion-label>
+                    <ion-checkbox [(ngModel)]="email" class="optchecckbox"></ion-checkbox>
+                </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-list>
+  
+        <!-- subject input -->
+        <ion-label class="optlabel">Title</ion-label>
+        <input type="text" class="optsubject" placeholder="Type Title">
+  
+        <!-- body -->
+        <ion-label class="optlabel">Message</ion-label>
+        <input type="text" class="optbody" placeholder="Messageg Content..." style="height: 200px;">
+  
+        <button ion-button class="optbutton">SEND</button>
+      <!-- </ion-row> -->
+  </ion-content>
+  

@@ -1,0 +1,55 @@
+<!--
+  Generated template for the AdditionoptionsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <ion-title></ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-row class="addoptrow">
+      <ion-col col-6 style="text-align:center" class="addoptcol1">
+        <ion-card class="addoptcard" (click)="loadnotificationoption()">
+            <ion-icon name="notifications" class="addopticon"></ion-icon>
+            <ion-card-title class="addoptcardtitle">
+              Notification
+            </ion-card-title>
+        </ion-card>
+        <ion-card class="addoptcard" (click)="loadnotifyruleoption()">
+            <ion-icon name="clipboard" class="addopticon"></ion-icon>
+            <ion-card-title class="addoptcardtitle">
+                Notify-Rule
+            </ion-card-title>
+        </ion-card>
+        <ion-card class="addoptcard" (click)="loadstatisticsoption()">
+            <ion-icon name="stats" class="addopticon"></ion-icon>
+            <ion-card-title class="addoptcardtitle">
+                Statistics
+            </ion-card-title>
+        </ion-card>
+      </ion-col>
+      <ion-col col-6 style="text-align:center" class="addoptcol2">
+        <ion-card class="addoptcard" (click)="loadscheduleoption()">
+            <ion-icon name="alarm" class="addopticon"></ion-icon>
+            <ion-card-title class="addoptcardtitle">
+                Schedule
+            </ion-card-title>
+        </ion-card>
+        <ion-card class="addoptcard" (click)="loadviewoption()">
+            <ion-icon name="eye" class="addopticon"></ion-icon>
+            <ion-card-title class="addoptcardtitle">
+                View
+            </ion-card-title>
+        </ion-card>
+        <ion-card class="addoptcard" (click)="loadsettingsoption()">
+            <ion-icon name="settings" class="addopticon"></ion-icon>
+            <ion-card-title class="addoptcardtitle">
+                Settings
+            </ion-card-title>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+</ion-content>

@@ -1,0 +1,56 @@
+page-option-notifyrule {
+    
+}
+.optnotification{
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-right: 5px;
+    height: 40px;
+    width: 100%;
+}
+.optlabel{
+    margin-bottom: 0px;
+    font-style: italic;
+    color: deeppink;
+}
+.optselect{
+    min-width: 100% !important;
+    border:1px solid grey;
+}
+.optchecckbox{
+    margin-right: 2px !important;
+    zoom: 0.8;
+    margin-left:0px !important;
+}
+.optlist{
+    margin-bottom: 0px !important;
+}
+.optsubject{
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-right: 5px;
+    height: 40px;
+    width: 100%;
+}
+.optbody{
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-right: 5px;
+    height: 200px;
+    width: 100%;
+    text-align:left;
+}
+.optbutton{
+    margin-left: 80%;
+}
+.optdatetime{
+    border:1px solid gray;
+}
+// .optitem{
+//     min-width: 100% !important;
+// }
+.item-ios.item-block .item-inner{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+

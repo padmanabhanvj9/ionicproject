@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Business Application</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div padding>
+      <img width="100%" height="200px" src='assets\img\BusinessLogo.png' alt="logo">
+
+      <ion-list class="content">
+	
+          <ion-item>
+              <ion-label floating>Business Id</ion-label>
+              <ion-input class="input-field" type="text"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label floating>Email Id</ion-label>
+              <ion-input class="input-field" type="text"></ion-input>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label floating>Mobile Number</ion-label>
+              <ion-input class="input-field" type="text"></ion-input>
+            </ion-item>
+        
+          </ion-list>
+        
+  </div>
+  <div padding>
+    <button ion-button color="primary" block (click)="load()">Sign In</button>
+  </div>
+
+</ion-content>

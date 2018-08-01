@@ -1,0 +1,49 @@
+<!--
+  Generated template for the TodayAppointmentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+    <ion-title>TodayAppointment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card *ngFor="let list of patientlist" (click)="loadpatientdetail()">
+        <ion-row>
+          <ion-col col-2>
+              <!-- <img src="assets/imgs/logo.png" style="height:30px;width:30px;"> -->
+              <ion-avatar item-start style="width:100%;height: 100%;">
+                  <ion-text-avatar style="width:100%;height: 100%;">{{list.pname | slice:0:1}}</ion-text-avatar>
+                </ion-avatar>
+          </ion-col>  
+          
+          <ion-col col-8>
+                       
+              <ion-list>
+                <!-- Add card content here! -->
+                <b>{{list.pname}}</b><br>
+                {{list.email}}<br>
+                {{list.token}}
+              </ion-list>
+    
+          </ion-col>
+          
+          <ion-col col-2>
+              <ion-toggle checked="false" style="zoom: 0.5;padding: 25px;"></ion-toggle>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+</ion-content>
+
+<ion-fab bottom right (click)="loadfaboptions()">
+    <button ion-fab>
+        <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
